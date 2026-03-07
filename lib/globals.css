@@ -1,0 +1,17 @@
+:root {
+  --primary-dark: #002D42;
+  --primary-accent: #75DEEC;
+  --soft-bg: #E5ECF3;
+  --gold: #DCC37E;
+
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
