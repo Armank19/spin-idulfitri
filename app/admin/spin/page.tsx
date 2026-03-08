@@ -145,7 +145,7 @@ const startSpin = async () => {
     return;
   }
 
-const loadParticipants = () => {
+
 
   const codes = pasteText
     .split(/[\s,]+/)
@@ -197,9 +197,9 @@ const runSpinAnimation = (finalNumber: string) => {
 
   spinRef.current = setInterval(() => {
     const random =
-      Math.floor(Math.random() * totalParticipants) + 1;
+  participants[Math.floor(Math.random() * participants.length)];
 
-    setDisplayNumber(
+setDisplayNumber(
   formatNumber(random)
 );
 
